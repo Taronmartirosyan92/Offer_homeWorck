@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DependenciesFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/depImageId"
+        android:layout_width="@dimen/size_200dp"
+        android:layout_height="@dimen/size_200dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/dep_NameId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/depImageId"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/dep_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dep_NameId"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/dep_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dep_text_id"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/dep_marital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dep_age"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

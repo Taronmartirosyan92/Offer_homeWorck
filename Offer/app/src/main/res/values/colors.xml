@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#e00476e9</color>
+    <color name="default_background">#ffffff</color>
+    <color name="page_background">#4eadd6</color>
+    <color name="offer_color">#E00476E9</color>
+    <color name="color_my_offer">#E00476E9</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="borderColor">#FF000000</color>
+    <color name="color_m">#42a5f5</color>
+    <color name="color_m1">#1e88e5</color>
+</resources>

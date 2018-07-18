@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/emile_image"
+            android:layout_width="@dimen/size_60dp"
+            android:layout_height="@dimen/size_60dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size_2dp"
+            app:civ_border_color="@color/color_my_offer" />
+
+        <TextView
+            android:id="@+id/emile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/emile_image"
+            android:layout_toLeftOf="@id/emile_button"
+            android:layout_toRightOf="@id/emile_image"
+            android:layout_toStartOf="@id/emile_button"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/emile_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/size_2dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/user_emile"
+            android:src="@drawable/ic_email_24dp" />
+
+        <TextView
+            android:id="@+id/emile_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/emile_image"
+            android:layout_toRightOf="@+id/emile_image" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

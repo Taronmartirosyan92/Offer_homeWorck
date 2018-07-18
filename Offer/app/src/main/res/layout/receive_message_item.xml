@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/receive_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif-monospace"
+        android:textStyle="italic"
+        tools:ignore="UnusedAttribute" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/receive_img"
+        android:layout_width="@dimen/size_30dp"
+        android:layout_height="@dimen/size_30dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        app:civ_border_color="@color/borderColor"
+        app:civ_border_width="@dimen/size_2dp" />
+
+    <me.himanshusoni.chatmessageview.ChatMessageView
+        android:id="@+id/chatMessageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:layout_toEndOf="@+id/receive_img"
+        android:layout_toRightOf="@+id/receive_img"
+        app:cmv_arrowGravity="start"
+        app:cmv_arrowPosition="left"
+        app:cmv_backgroundColor="@color/color_m"
+        app:cmv_backgroundColorPressed="@color/color_m1"
+        app:cmv_contentPadding="@dimen/size_20dp"
+        app:cmv_cornerRadius="@dimen/size_3dp"
+        app:cmv_showArrow="true">
+
+        <TextView
+            android:id="@+id/receive_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/receive_img"
+            android:layout_toRightOf="@+id/receive_img"
+            android:maxWidth="@dimen/size_150dp" />
+
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+</RelativeLayout>
